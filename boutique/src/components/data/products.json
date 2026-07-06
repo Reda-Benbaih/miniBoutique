@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Appareil Photo Reflex",
+    "price": 599.99,
+    "category": "Électronique",
+    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=300"
+  },
+  {
+    "id": 2,
+    "name": "Montre Connectée",
+    "price": 199.99,
+    "category": "Électronique",
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300"
+  },
+  {
+    "id": 3,
+    "name": "Cafetière à Piston",
+    "price": 29.99,
+    "category": "Cuisine",
+    "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=300"
+  },
+  {
+    "id": 4,
+    "name": "Sac à Dos de Randonnée",
+    "price": 79.99,
+    "category": "Mode",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300"
+  },
+  {
+    "id": 5,
+    "name": "Veste en Jean",
+    "price": 49.99,
+    "category": "Mode",
+    "image": "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=300"
+  }
+]

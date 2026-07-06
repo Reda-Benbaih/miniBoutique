@@ -1,0 +1,17 @@
+.category-filter-container {
+  padding: 10px;
+  border: 1px solid #343434;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.category-filter-label {
+  margin-right: 10px;
+}
+
+.category-filter-select {
+  padding: 5px;
+  background: #222;
+  color: #fff;
+  border: 1px solid #ff3333;
+}

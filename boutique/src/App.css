@@ -1,3 +1,28 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
+  background-color: #0b0a0a; 
+  font-family: sans-serif;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.shop-content {
+  flex: 3; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+.cart-container {
+  flex: 1; 
+  background-color: #121111; 
+  border-radius: 8px;
+  padding: 10px;
 }
