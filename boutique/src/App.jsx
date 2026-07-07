@@ -11,10 +11,10 @@ function App() {
   const [cart, setCart] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('Toutes');
 
-  // Récupérer les catégories uniques de manière dynamique
+  // bring product from the json
   const categories = ['Toutes', ...new Set(initialProducts.map(p => p.category))];
 
-  // --- Actions ---
+  // Action
   const handleAddToCart = (product) => {
     setCart(prevCart => {
       const existingItem = prevCart.find(item => item.id === product.id);
@@ -35,7 +35,7 @@ function App() {
     setProducts(prevProducts => prevProducts.filter(p => p.id !== productId));
   };
 
-  // Filtrage du catalogue
+  //filter catalog
   const filteredProducts = selectedCategory === 'Toutes'
     ? products
     : products.filter(p => p.category === selectedCategory);
