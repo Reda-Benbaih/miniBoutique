@@ -1,4 +1,3 @@
-import React from 'react';
 import './CategoryFilter.css';
 
 const CategoryFilter = ({ categories, selectedCategory, onSelectCategory }) => {
