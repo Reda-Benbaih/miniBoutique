@@ -4,7 +4,7 @@ const Navbar = () =>{
     return(
         <section className="navbar">
             <div className="logo">miniboutique</div>
-            <div className="modeContainer">
+            <div className="mode-container">
                 <p>lightMode</p>
                 <button>test</button>
             </div>
