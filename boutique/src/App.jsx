@@ -5,6 +5,7 @@ import CategoryFilter from './components/CategoryFilter/CategoryFilter'
 import ProductList from './components/ProductList/ProductList'
 import Cart from './components/Cart/Cart'
 import initialProducts from './components/data/products.json'
+import AddProduct from './components/AddProduct/AddProduct'
 
 function App() {
   const [products, setProducts] = useState(initialProducts);

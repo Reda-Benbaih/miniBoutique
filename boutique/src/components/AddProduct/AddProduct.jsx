@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { useNavigate } from 'react-router-dom';
-import './AddProduct.css'; // Créez ce fichier pour styliser votre formulaire
+import './AddProduct.css'; 
 
 // Définition du schéma de validation avec Yup
 const productSchema = yup.object().shape({
