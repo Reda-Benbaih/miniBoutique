@@ -3,11 +3,11 @@ import './Cart.css';
 const Cart = ({ cart, onRemoveFromCart }) => {
   const totalPrice = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
   const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
-
+  const totalss = cart.length;
   return (
     <div className="cart-container">
       <h2 className="cart-title">
-        Mon Panier ({totalItems})
+        Mon Panier ({totalss})
       </h2>
       
       {cart.length === 0 ? (
@@ -25,7 +25,7 @@ const Cart = ({ cart, onRemoveFromCart }) => {
                   onClick={() => onRemoveFromCart(item.id)}
                   className="btn-remove-item"
                 >
-                  ❌
+                  X
                 </button>
               </li>
             ))}
