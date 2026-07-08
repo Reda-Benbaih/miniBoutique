@@ -24,7 +24,7 @@ const Cart = ({ cart, onRemoveFromCart }) => {
                   onClick={() => onRemoveFromCart(item.id)}
                   className="btn-remove-item"
                 >
-                  <X></X>
+                 X
                 </button>
               </li>
             ))}
