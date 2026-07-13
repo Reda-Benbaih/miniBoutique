@@ -7,6 +7,7 @@ import Cart from './components/Cart/Cart'
 import initialProducts from './components/data/products.json'
 
 function App() {
+  const [search,setSearch]=useState("");
   const [products, setProducts] = useState(initialProducts);
   const [cart, setCart] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('Toutes');
@@ -40,13 +41,20 @@ function App() {
     ? products
     : products.filter(p => p.category === selectedCategory);
 
+    const handleChange = (e)=>{
+      setSearch(e.target.value);
+      const filterd = products.filter(item=>item.name.includes(search));
+      setProducts(filterd)
+    }
   return (
     <>
       <Navbar cartCount={cart.reduce((total, item) => total + item.quantity, 0)} />
       <main className="main-content">
         
         <div className="shop-content">
+          <input type="text" onChange={handleChange} />
           <CategoryFilter 
+            
             categories={categories}
             selectedCategory={selectedCategory}
             onSelectCategory={setSelectedCategory}
